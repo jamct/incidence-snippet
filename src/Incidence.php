@@ -113,7 +113,7 @@ class Incidence
         $date = DateTime::createFromFormat("d.m.Y, H:i", str_replace(" Uhr", "", $data['last_update']));
         $key = $date->format("Ymd");
         $old[$key] = $data;
-        file_put_contents('./data.json', json_encode($old));
+        file_put_contents($this->cache_file, json_encode($old));
         return $key;
     }
 }
