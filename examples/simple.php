@@ -17,7 +17,7 @@ echo "
 <tr><td>Fälle insgesamt</td><td>" . $today['cases'] . "</td></tr>
 <tr><td>Fälle letzte 7 Tage</td><td>" . $today['cases7_lk'] . "</td></tr>
 <tr><td>Tote</td><td>" . $today['deaths'] . "</td></tr>
-<tr><td colspan='2'>Bundesland</td></tr>
+<tr><td colspan='2'>" . $today['BL'] . "</td></tr>
 <tr><td>7-Tage-Inzidenz</td><td>" . round($today['cases7_bl_per_100k'], 2) . "</td></tr>
 <tr><td>Fälle letzte 7 Tage</td><td>" . $today['cases7_bl'] . "</td></tr>
 </table>";
