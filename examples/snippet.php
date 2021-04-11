@@ -19,7 +19,7 @@ $today = $incidence->getDaily(0);
 
 echo "<div class='widget'>";
 
-echo "<h3>Inzidenz-Ampel für Hannover</h3>";
+echo "<h3>Inzidenz-Ampel für " . $today['GEN'] . "</h3>";
 echo "<h6>(Fälle pro 100.000 Einwohner in 7 Tagen)</h6>";
 
 drawStoplight($today, $threshold);
