@@ -10,6 +10,7 @@ class Incidence
         'OBJECTID',
         'GEN',
         'BEZ',
+        'BL',
         'cases',
         'deaths',
         'cases_per_population',
