@@ -75,7 +75,7 @@ class Incidence
             $c,
             CURLOPT_URL,
             'https://services7.arcgis.com/mOBPykOjAyBO2ZKk/arcgis/rest/services/RKI_Landkreisdaten/FeatureServer/0/query?where=OBJECTID='
-                . $this->region_id . '&outFields=' . $fieldstr . '&outSR=4326&f=json'
+                . $this->region_id . '&outFields=' . $fieldstr . '&returnGeometry=false&outSR=&f=json'
         );
 
         curl_setopt($c, CURLOPT_RETURNTRANSFER, 1);
